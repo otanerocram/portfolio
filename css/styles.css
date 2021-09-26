@@ -21,6 +21,14 @@
   .what-i-do{
     font-size: 28px !important;
   }
+
+  .my-photo > img{
+    width: 100%;
+  }
+
+  .my-spacer{
+    margin: 50px 0;
+  }
 }
 @media screen and (min-width: 1024px) {
   .i-am {
@@ -31,7 +39,10 @@
     padding-top: 60px;
   }
   .what-i-do{
-    font-size: 38px !important;
+    font-size: 25px !important;
+  }
+  .my-spacer{
+    margin: 150px 0;
   }
 }
 
@@ -115,7 +126,6 @@ body {
   font-family: var(--font-anonymous);
   font-style: normal;
   font-weight: 500;
-  font-size: 38px;
   line-height: 180%;
   text-align: center;
   padding-top: 40px;
@@ -124,8 +134,10 @@ body {
 
 .my-photo{
   
-  max-height: 503px;
-  min-height: 503px;
+  
+}
+.my-photo > img{
+  border-radius: 10px;
 }
 
 .my-about{
@@ -137,12 +149,15 @@ body {
 
 .my-about p {
   font-family: var(--font-jost);
-  font-size: 18px;
-  letter-spacing: 0.3px;
+  font-weight: 300;
+  font-size: 24px;
+  letter-spacing: 0.8px;
 }
 .my-about span{
   color: var(--color-neon-orange);
 }
+
+
 
 
 
