@@ -2,7 +2,7 @@
   --font-jost: "Jost", sans-serif;
   --font-anonymous: "Anonymous Pro", monospace;
   --hero-font-size: 48px;
-  --my-bg-color: #1c2c35;
+  --my-bg-color: #1C2C35;
   --primary-color: #b0fbbc;
   --color-neon-green: #c1f93c;
   --color-neon-orange: #ffbc00;
@@ -11,7 +11,7 @@
 @media screen and (max-width: 1024px) {
   .i-am {
     font-size: 33px !important;
-    min-height: 380px;
+    min-height: 230px;
   }
 
   .my-header {
@@ -19,11 +19,15 @@
   }
 
   .what-i-do{
-    font-size: 28px !important;
+    font-size: 18px !important;
   }
 
   .my-photo > img{
     width: 100%;
+  }
+
+  .my-about p {
+    font-size: 18px !important;
   }
 
   .my-spacer{
@@ -44,12 +48,24 @@
   .my-spacer{
     margin: 150px 0;
   }
+  .my-about p {
+    font-size: 24px !important;
+  }
 }
 
+html {
+  height: 100%;
+  
+}
 body {
-  background-color: var(--my-bg-color);
+  height: 100%;
+  /* background-color: var(--my-bg-color); */
+  background-image: linear-gradient(#1C2A34, #111A20);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   color: #fff;
-  height: 100vh;
+  height: 100vw;
+  /* height: 100vh; */
 }
 
 .my-header {
@@ -110,6 +126,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
 .i-am > a {
@@ -132,10 +149,7 @@ body {
   color: #ecf8ff;
 }
 
-.my-photo{
-  
-  
-}
+
 .my-photo > img{
   border-radius: 10px;
 }
@@ -150,14 +164,26 @@ body {
 .my-about p {
   font-family: var(--font-jost);
   font-weight: 300;
-  font-size: 24px;
   letter-spacing: 0.8px;
 }
 .my-about span{
   color: var(--color-neon-orange);
 }
 
+.footer{
+  font-family: var(--font-jost);
+  font-weight: 300;
+}
 
-
-
+.my-contact{
+  font-size: 50px;
+}
+.my-contact > a{
+  margin: 10px;
+  color: var(--color-neon-green)
+}
+.my-contact > a:hover{
+  color: var(--color-neon-orange);
+  cursor: pointer;
+}
 
